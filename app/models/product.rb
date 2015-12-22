@@ -5,4 +5,6 @@ class Product < ActiveRecord::Base
 	validates :seller_contact, presence:true
 
 	has_many :comments
+	belongs_to :user
 end
+
